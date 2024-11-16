@@ -1,7 +1,6 @@
 import json
-from constantes import *
+from data.constantes import *
 
-# se crea el grafo para tenerlo en memoria osea solo se deberia de ejecutar una vez para reducir costos
 def getGraph():
     graph = {}
 

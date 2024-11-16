@@ -1,7 +1,7 @@
 import json
 import numpy as np
 from scipy.spatial import Delaunay
-from constantes import *
+from data.constantes import *
 
 def cargar_ciudades(archivo):
     with open(archivo, 'r') as f:
@@ -53,9 +53,9 @@ def calcular_y_guardar_rutas(ciudades, archivo_salida, distancia_maxima):
     print(f"Se han guardado {len(rutas_unicas)} rutas únicas en {archivo_salida}")
 
 
-def main():
+def createRoutes():
     ciudades = cargar_ciudades(CITIES_JSON_FILE)
     distancia_maxima = 1200
     calcular_y_guardar_rutas(ciudades, ROUTES_JSON_FILE, distancia_maxima)
 
-main()
+createRoutes()
