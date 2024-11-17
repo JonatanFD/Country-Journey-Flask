@@ -58,10 +58,15 @@ Ejecutar:
    conda activate env
    ```
 
-2. Inicia el servidor:
+2. Instala las dependencias según sea necesario:
    ```bash
-   flask --app main run --debug
+   pip install flask
    ```
 
-3. Accede a la aplicación en tu navegador:
+3. Inicia el servidor:
+   ```bash
+   flask --app main run --debug
+  ```
+
+4. Accede a la aplicación en tu navegador:
    - [http://localhost:5000](http://localhost:5000)
